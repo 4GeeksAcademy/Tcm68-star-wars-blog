@@ -1,0 +1,21 @@
+/* Star Wars background for the body (you can replace 'background.jpg' with your own image) */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2022/06/08/05/47/stars-7249785_960_720.jpg'); /* Use a starry background image */
+    background-size: cover;
+    font-family: 'Aurebesh', sans-serif; /* Use the Aurebesh font */
+}
+
+/* Star Wars-themed navigation bar */
+.star-wars-nav {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px 0; /* Add some top and bottom padding */
+}
+
+.star-wars-nav .logo { 
+    color: #ffe81f; 
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 180px;
+}
