@@ -31,29 +31,6 @@ const Home = () => {
 	<div className="text-center mx-auto ">
 
 
-<div className="dropend">
-				<button className="btn btn-warning dropdown-toggle  m-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Favorites {store.favorites.length}
-				</button>
-				<ul className="dropdown-menu mx-auto">
-					{
-						store.favorites.map((favorite, index)=> {
-							
-							return (
-								
-							<li style={{color:"rgb(255, 179, 0"}}  key={index}><h2>{favorite}
-							 <box-icon type='solid' class='bx-lg  bx-tada-hover' color="orange" name='trash-alt'onClick={() => handleDelete(index)}
-							>
-							</box-icon>
-							{/* <span onClick={() => handleDelete(index)}>X</span> */}
-							
-							</h2>
-							</li>
-							)
-						})
-					}
-				</ul>
-			</div>
 
 			<h1>Characters</h1>
 

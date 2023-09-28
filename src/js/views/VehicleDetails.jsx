@@ -12,8 +12,8 @@ export const VehicleDetails = () => {
 
 
 	function handleImageError() {
-		// Código para manejar el error de carga de la imagen
-		setImageSource("https://c4.wallpaperflare.com/wallpaper/670/495/775/tv-show-the-mandalorian-baby-yoda-star-wars-the-mandalorian-tv-show-hd-wallpaper-preview.jpg");
+
+		setImageSource("https://images.unsplash.com/photo-1518331483807-f6adb0e1ad23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80");
 	  }
     
 
@@ -27,7 +27,7 @@ export const VehicleDetails = () => {
 			{JSON.stringify(store.oneVehicle) !== '{}' ?(
 			<div className="card text-start mx-auto"
 				style={{ width: "60%" }} key="index">
-				<img src={imageSource} onError={handleImageError} className="card-img-top mx-auto mt-2" style={{ height: "18rem", objectFit: "cover", borderRadius: "20px",width: "65%" }} alt="..." />
+				<img src={imageSource} onError={handleImageError} className="card-img-top mx-auto mt-2" style={{ height: "60%", objectFit: "cover", borderRadius: "20px",width: "50%" }}  alt="..." />
 				<div className="card-body mx-auto" style={{ height: "16rem", overflow: "scroll",width: "80%" }}>
 					<h5 className="card-title">Name: {store.oneVehicle.result.properties.name} </h5>
 

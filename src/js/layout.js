@@ -12,6 +12,7 @@ import { Footer } from "./component/footer";
 import CharacterDetails from "./views/CharacterDetails.jsx";
 import PlanetDetails from "./views/PlanetDetails.jsx";
 import VehicleDetails from "./views/VehicleDetails.jsx";
+import FireflyBackground from "./component/Starbackground";
 
 //create your first component
 const Layout = () => {
@@ -21,6 +22,7 @@ const Layout = () => {
 
 	return (
 		<div>
+			<FireflyBackground />
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />

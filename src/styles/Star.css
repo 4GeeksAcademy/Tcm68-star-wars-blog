@@ -1,0 +1,33 @@
+/* Firefly background styles with background image */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the canvas */
+  background-image: url('https://images.unsplash.com/photo-1593371256584-ac70d0ab43d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80'); /* Add your background image URL here */
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  z-index: -1; /* Optional: Prevent background image repetition */
+}
+
+/* Customize the appearance of the stars (fireflies) */
+
+
+/* Define the twinkling animation */
+@keyframes twinkling {
+  0% {
+      opacity: 0.5;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+
+
+
+
